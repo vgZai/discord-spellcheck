@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Discord Web Spellchecker",
+  "version": "1.0.0",
+  "description": "Instant right-click spelling suggestions & dictionary for Discord Web.",
+  "content_scripts": [
+    {
+      "matches": ["https://discord.com/*", "https://*.discord.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
